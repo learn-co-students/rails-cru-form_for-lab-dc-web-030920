@@ -1,0 +1,2 @@
+module AgenresHelper
+end
