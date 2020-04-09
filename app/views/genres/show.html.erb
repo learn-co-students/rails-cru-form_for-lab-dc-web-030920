@@ -1,0 +1,16 @@
+
+
+<h1>Genre Name: <%= @genre.name %></h1>
+
+<p>Songs of this Genre</p>
+<ul>
+<% @genre.songs.each do |song| %>
+    <li><%= song.name %></li>
+<% end %> 
+
+</ul>
+
+<p>Menu: </p>
+<div><%= link_to "Edit this Genre", edit_genre_path(@genre) %></div>
+
+<div><%= link_to "Return to Genre Index", genres_path %></div>
